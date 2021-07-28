@@ -2,7 +2,6 @@ package me.majikku.majikku.Events;
 
 //import me.majikku.majikku.Files.PlayerData;
 import me.clip.placeholderapi.PlaceholderAPI;
-import me.majikku.majikku.Files.SpawnFile;
 import me.majikku.majikku.Majikku;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

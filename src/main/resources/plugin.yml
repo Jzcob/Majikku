@@ -58,10 +58,6 @@ commands:
   enderchest:
     description: With this command you can open your or someone else's enderchest.
     aliases: ['ec']
-  rename:
-    description: With this command you can rename an item.
-  setspawn:
-    description: With this command you can set the spawn.
   rain:
     description: Makes it rain.
   sun:
@@ -158,23 +154,3 @@ commands:
     description: This command allows you to change the gamerule "SpectatorsGenerateChunks".
   universalanger:
     description: This command allows you to change the gamerule "UniversalAnger".
-
-  #Permissions
-  permissions:
-    majikku.default:
-      children:
-        majikku.helpop: true
-        majikku.spawn: true
-
-    majikku.helper:
-      children:
-        majikku.helpop.see: true
-        majikku.helpop.respond: true
-
-    majikku.moderator:
-      children:
-        majikku.moderatorchat: true
-        majikku.staffchat: true
-        majikku.fly: true
-        majikku.gamemode.survival: true
-        majikku.gamemode.spectator: true
