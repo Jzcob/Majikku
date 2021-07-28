@@ -1,0 +1,48 @@
+##########################
+## Majikku Config File! ##
+##########################
+Settings:
+  #This sets the prefix across the entire plugin!
+  prefix: "&c&lMajikku » "
+
+  OtherPlugins:
+    #Have this be either true or false depending if you have the plugin or not.
+    #If this is disabled it doesn't really matter what you do with vault. And will just use the default join message.
+    placeholderapi: false
+    #For permissions this is really just for the prefix in the chat for the specific rank in the specific plugin.
+    permissions:
+      Vault: false
+
+
+#Chat Settings
+  Chat:
+    adminchat-prefix: "&4&lADMIN » &c"
+    builderchat-prefix: "&a&lBUILDER » &c"
+    modchat-prefix: "&b&lMOD » &c"
+    ownerchat-prefix: "&6&lOWNER » &c"
+    staffchat-prefix: "&c&lSTAFF » &c"
+    helpchat-prefix: "&c&lHELPOP&c"
+    #Im from america so I say "color" not "colour" apologizes! :D
+    adminchat-message-color: "&e"
+    builderchat-message-color: "&e"
+    modchat-message-color: "&e"
+    ownerchat-message-color: "&e"
+    staffchat-message-color: "&e"
+    helpchat-message-color: "&e"
+
+
+#Notifications
+  Notify:
+    # When this is set to "true" it sends a message to the person if someone has done something to them.
+    # e.g. Switching their gamemode
+    notify-target: false
+
+    # Same as Notifying the target but it alerts them of who did the action.
+    # If you don't want the target to be notified at all disable both of these.
+    # Only enable one of these as it will send 2 messages if both are on!
+    # Check the wiki to see what each notify the target of.
+    notify-who-did-it: true
+
+
+#Do no change this.
+Updated: true

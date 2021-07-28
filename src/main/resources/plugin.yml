@@ -1,0 +1,180 @@
+name: Majikku
+version: 1.0.1
+main: me.majikku.majikku.Majikku
+api-version: 1.16
+softdepend: [ PlaceholderAPI ]
+authors: [ Jzcob, Sezn ]
+description: This is my first public plugin that I have created after many private plugins that I have created.
+commands:
+  reload:
+    description: This command reloads the all of the configuation files.
+    aliases: ['rl', 'mr']
+  creative:
+    description: This command sets yourself or someone elses gamemode to creative mode.
+    aliases: ['gmc', 'gamemode c', 'gamemode creative']
+  adventure:
+    description: This command sets yourself or someone else into into adventure mode.
+    aliases: ['gma', 'gamemode a', 'gamemode adventure']
+  spectator:
+    description: This command sets yourself or someone else into spectator mode.
+    aliases: ['gmsp', 'spec', 'gamemode spec', 'gamemode spectator', 'gamemode sp']
+  survival:
+    description: This command sets yourself or someone else into survival mode.
+    aliases: ['gms', 'gamemode s', 'gamemode survival']
+  gamemode:
+    description: This command switches your gamemode from Creative and Survival.
+    aliases: ['gm']
+  teleport:
+    description: This command allows you to teleport to anyone or any coordinate.
+    aliases: ['tp']
+  adminchat:
+    description: Administrator Chat.
+    aliases: ['ac']
+  builderchat:
+    description: Builder Chat.
+    aliases: ['bc']
+  moderatorchat:
+    description: Moderator Chat.
+    aliases: ['mc', 'modchat']
+  ownerchat:
+    description: Owner Chat.
+    aliases: ['oc']
+  staffchat:
+    description: Staff Chat.
+    aliases: ['sc']
+  helpop:
+    description: Sends a message in the help chat.
+    aliases: ['ask', 'helpme', 'hop']
+  answer:
+    description: Responds to a helpop message.
+    aliases: ['respond']
+  murder:
+    description: With this command you can murder yourself or someone else!
+    aliases: ['kill']
+  heal:
+    description: Heals you!
+  feed:
+    description: Feeds you!
+  enderchest:
+    description: With this command you can open your or someone else's enderchest.
+    aliases: ['ec']
+  rename:
+    description: With this command you can rename an item.
+  setspawn:
+    description: With this command you can set the spawn.
+  rain:
+    description: Makes it rain.
+  sun:
+    description: Makes it sunny.
+  thunder:
+    description: Makes it thunder.
+  godmode:
+    description: Toggles godmode or invisibility.
+    aliases: ['god']
+  flymode:
+    description: Toggles flight.
+    aliases: ['fly']
+  #Gamerules
+  announceadvancements:
+    description: This command allows you to change the gamerule "AnnounceAdvancements".
+    aliases: ['aa']
+  commandblockoutput:
+    description: This command allows you to change the gamerule "CommandBlockOutput".
+    aliases: ['cbo']
+  disableelytramovementcheck:
+    description: This command allows you to change the gamerule "DisableElytraMovementCheck".
+    aliases: ['elytracheck']
+  disableraids:
+    description: This command allows you to change the gamerule "DisableRaids".
+    aliases: ['raids']
+  dodaylightcycle:
+    description: This command allows you to change the gamerule "DoDaylightCycle".
+    aliases: ['daylightcycle', 'dc']
+  dofiretick:
+    description: This command allows you to change the gamerule "DoFireTick".
+    aliases: ['firetick', 'ft']
+  doimmediaterespawn:
+    description: This command allows you to change the gamerule "DoImmediateRespawn".
+    aliases: ['immediaterespawn']
+  doinsomnia:
+    description: This command allows you to change the gamerule "DoInsomnia".
+    aliases: ['insomnia']
+  dolimitedcrafting:
+    description: This command allows you to change the gamerule "DoLimitedCrafting".
+    aliases: ['limitedcrafting']
+  domobloot:
+    description: This command allows you to change the gamerule "DoMobLoot".
+    aliases: ['mobloot']
+  domobspawning:
+    description: This command allows you to change the gamerule "DoMobSpawning".
+    aliases: ['mobspawning']
+  dopatrolspawning:
+    description: This command allows you to change the gamerule "DoPatrolSpawning".
+    aliases: ['patrolspawning']
+  dotiledrops:
+    description: This commands allows you to change the gamerule "DoTileDrops".
+    aliases: ['tiledrops']
+  dotraderspawning:
+    description: This command allows you to change the gamerule "DoTraderSpawning".
+    aliases: ['traderspawning']
+  doweathercycle:
+    description: This command allows you to change the gamerule "DoWeatherCycle".
+    aliases: ['weathercycle']
+  drowningdamage:
+    description: This command allows you to change the gamerule "DrowningDamage".
+  falldamage:
+    description: This command allows you to change the gamerule "FallDamage".
+  firedamage:
+    description: This command allows you to change the gamerule "FireDamage".
+  forgivedeadplayers:
+    description: This command allows you to change the gamerule "ForgiveDeadPlayers".
+  keepinventory:
+    description: This command allows you to change the gamerule "KeepInventory".
+    aliases: ['ki']
+  logadmincommands:
+    description: This command allows you to change the gamerule "LogAdminCommands".
+    aliases: ['admincommands']
+  maxcommandchainlength:
+    description: This command allows you to change the gamerule "MaxCommandChainLength".
+  maxentitycramming:
+    description: This command allows you to change the gamerule "MaxEntiyCramming".
+  mobgriefing:
+    description: This command allows you to change the gamerule "MobGriefing".
+  naturalregeneration:
+    description: This command allows you to change the gamerule "NaturalRegeneration".
+  randomtickspeed:
+    description: This command allows you to change the gamerule "RandomTickSpeed".
+  reducedebuginfo:
+    description: This command allows you to change the gamerule "ReduceDebugInfo".
+    aliases: ['debuginfo']
+  sendcommandfeedback:
+    description: This command allows you to change the gamerule "SendCommandFeedback".
+    aliases: ['commandfeedback']
+  showdeathmessages:
+    description: This command allows you to change the gamerule "ShowDeathMessagees".
+  spawnradius:
+    description: This command allows you to change the gamerule "SpawnRadius".
+  spectatorsgeneratechunks:
+    description: This command allows you to change the gamerule "SpectatorsGenerateChunks".
+  universalanger:
+    description: This command allows you to change the gamerule "UniversalAnger".
+
+  #Permissions
+  permissions:
+    majikku.default:
+      children:
+        majikku.helpop: true
+        majikku.spawn: true
+
+    majikku.helper:
+      children:
+        majikku.helpop.see: true
+        majikku.helpop.respond: true
+
+    majikku.moderator:
+      children:
+        majikku.moderatorchat: true
+        majikku.staffchat: true
+        majikku.fly: true
+        majikku.gamemode.survival: true
+        majikku.gamemode.spectator: true
