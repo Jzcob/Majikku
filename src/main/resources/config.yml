@@ -6,23 +6,36 @@ Settings:
   prefix: "&c&lMajikku » "
 
   OtherPlugins:
-    #Have this be either true or false depending if you have the plugin or not.
-    #If this is disabled it doesn't really matter what you do with vault. And will just use the default join message.
-    placeholderapi: false
-    #For permissions this is really just for the prefix in the chat for the specific rank in the specific plugin.
-    permissions:
-      Vault: false
+    #When true, the on-join and on-leave messages will be enabled.
+    placeholderapi: true
+    #When true, chat formats with the plugin will be enabled.
+    luckperms: true
+
+  #When true, players will be able to set a home or teleport to their existing home.
+  Homes: false
+
+  #When true, the command tpa will be enabled.
+  TPA: false
+
+  #When true, one player sleep will be enabled.
+  OnePlayerSleep: false
+
+  #When true, players will receive coords where they died.
+  OnDeathMessage: false
+
+  #When true, the discord features of the plugin are enabled.
+  Discord: false
 
 
-#Chat Settings
+  #Chat Settings
   Chat:
-    adminchat-prefix: "&4&lADMIN » &c"
-    builderchat-prefix: "&a&lBUILDER » &c"
-    modchat-prefix: "&b&lMOD » &c"
-    ownerchat-prefix: "&6&lOWNER » &c"
-    staffchat-prefix: "&c&lSTAFF » &c"
-    helpchat-prefix: "&c&lHELPOP&c"
-    #Im from america so I say "color" not "colour" apologizes! :D
+    adminchat-prefix: "&4&lADMIN »&c"
+    builderchat-prefix: "&a&lBUILDER »&c"
+    modchat-prefix: "&b&lMOD »&c"
+    ownerchat-prefix: "&6&lOWNER »&c"
+    staffchat-prefix: "&c&lSTAFF »&c"
+    helpchat-prefix: "&c&lHELPOP »&c"
+
     adminchat-message-color: "&e"
     builderchat-message-color: "&e"
     modchat-message-color: "&e"
@@ -30,19 +43,23 @@ Settings:
     staffchat-message-color: "&e"
     helpchat-message-color: "&e"
 
+    join-message: "&7[&a+&7] %vault_prefix% &c%player_name%"
+    leave-message: "&7[&c-&7] %vault_prefix% &c%player_name%"
 
-#Notifications
+    default-chat-format: "{PREFIX} &b{PLAYER_NAME} &7{MESSAGE}"
+
+  #Notifications
   Notify:
     # When this is set to "true" it sends a message to the person if someone has done something to them.
-    # e.g. Switching their gamemode
+    # e.g. Switching their gamemode.
     notify-target: false
 
-    # Same as Notifying the target but it alerts them of who did the action.
+    # Same as Notifying the target, but it alerts them of who did the action.
     # If you don't want the target to be notified at all disable both of these.
     # Only enable one of these as it will send 2 messages if both are on!
     # Check the wiki to see what each notify the target of.
     notify-who-did-it: true
 
 
-#Do no change this.
+#Do not change this.
 Updated: true

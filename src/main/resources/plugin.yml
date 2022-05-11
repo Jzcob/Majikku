@@ -1,8 +1,8 @@
 name: Majikku
-version: 1.0.1
-main: me.majikku.majikku.Majikku
-api-version: 1.16
-softdepend: [ PlaceholderAPI ]
+version: '${project.version}'
+main: majikku.majikku.Majikku
+api-version: 1.18
+softdepend: [ PlaceholderAPI, LuckPerms ]
 authors: [ Jzcob, Sezn ]
 description: This is my first public plugin that I have created after many private plugins that I have created.
 commands:
@@ -27,6 +27,15 @@ commands:
   teleport:
     description: This command allows you to teleport to anyone or any coordinate.
     aliases: ['tp']
+  tphere:
+    description: Teleports someone to you.
+    aliases: ['tph']
+  tpa:
+    description: Request a teleport.
+  tpaccept:
+    description: Accept a teleport.
+  tpdeny:
+    description: Denies a teleport request.
   adminchat:
     description: Administrator Chat.
     aliases: ['ac']
@@ -42,26 +51,31 @@ commands:
   staffchat:
     description: Staff Chat.
     aliases: ['sc']
-  helpop:
+  ask:
     description: Sends a message in the help chat.
-    aliases: ['ask', 'helpme', 'hop']
+    aliases: ['a']
   answer:
     description: Responds to a helpop message.
-    aliases: ['respond']
+    aliases: ['respond', 'r']
   murder:
     description: With this command you can murder yourself or someone else!
     aliases: ['kill']
   heal:
-    description: Heals you!
+    description: Heals you.
   feed:
-    description: Feeds you!
+    description: Feeds you.
   enderchest:
     description: With this command you can open your or someone else's enderchest.
     aliases: ['ec']
+  day:
+    description: Turns time to day.
+  night:
+    description: Turns time to night.
   rain:
     description: Makes it rain.
-  sun:
+  clear:
     description: Makes it sunny.
+    aliases: ['sun']
   thunder:
     description: Makes it thunder.
   godmode:
@@ -70,6 +84,33 @@ commands:
   flymode:
     description: Toggles flight.
     aliases: ['fly']
+  setspawn:
+    description: Sets spawn location.
+  spawn:
+    description: Teleports to spawn.
+  sethome:
+    description: Sets home location.
+  home:
+    description: Teleports to your home.
+  invsee:
+    description: Lets you look in players inventory.
+  speed:
+    description: Changes your movement speed (flying or walking).
+  clearinventory:
+    description: Clears your inventory.
+    aliases: ['ci']
+  craft:
+    description: Opens a crafting table.
+    aliases: ['craftingtable', 'workbench']
+  enchant:
+    description: Opens an enchanting table.
+    aliases: ['enchantingtable']
+  discord:
+    description: Sends a custom message for a discord link.
+  warp:
+    description: Allows you to warp to a specified warp.
+  setwarp:
+    description: Allows you to set a warp at your current location.
   #Gamerules
   announceadvancements:
     description: This command allows you to change the gamerule "AnnounceAdvancements".
@@ -86,6 +127,9 @@ commands:
   dodaylightcycle:
     description: This command allows you to change the gamerule "DoDaylightCycle".
     aliases: ['daylightcycle', 'dc']
+  doentitydrops:
+    description: This command allows you to change the gamerule "DoEntityDrops".
+    aliases: ['entitydrops']
   dofiretick:
     description: This command allows you to change the gamerule "DoFireTick".
     aliases: ['firetick', 'ft']
@@ -124,6 +168,8 @@ commands:
     description: This command allows you to change the gamerule "FireDamage".
   forgivedeadplayers:
     description: This command allows you to change the gamerule "ForgiveDeadPlayers".
+  freezedamage:
+    description: This command allows you to change the gamerule "FreezeDamage".
   keepinventory:
     description: This command allows you to change the gamerule "KeepInventory".
     aliases: ['ki']
@@ -138,6 +184,9 @@ commands:
     description: This command allows you to change the gamerule "MobGriefing".
   naturalregeneration:
     description: This command allows you to change the gamerule "NaturalRegeneration".
+  playerssleepingpercentage:
+    description: This command allows you to change the gamerule "PlayerSleepingPercentage.
+    aliases: ['psp']
   randomtickspeed:
     description: This command allows you to change the gamerule "RandomTickSpeed".
   reducedebuginfo:

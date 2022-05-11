@@ -1,0 +1,7 @@
+Discord:
+
+
+  #Sets the discord message when people do /discord
+  DiscordMessage: "&7Our discord server is: https://Example.com"
+  #Put your discord token here.
+  token: ""
